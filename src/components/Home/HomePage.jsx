@@ -4,11 +4,13 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import coursepic from "../../assets/course.png";
 // import hero from "../../assets/hero.png";
-
+import check from "../../assets/check.png";
 import feature from "../../assets/fec.png";
 import homepic from "../../assets/home.png";
 import lotext from "../../assets/lotext.png";
 import np from "../../assets/np.png";
+import girl from "../../assets/guser.png";
+import boy from "../../assets/boy.png";
 
 export default function HeroSection() {
   const sliderSettings = {
@@ -70,8 +72,8 @@ export default function HeroSection() {
           </section>
 
           {/* slider---> */}
-          <div id="slider" className="flex flex-col items-center mt-10">
-            <Slider {...sliderSettings} className="w-4/5 ">
+          <div id="slider" className="flex flex-col items-center mt-10 mx-10">
+            <Slider {...sliderSettings} className="w-full ">
               <div >
                 <div className="flex flex-row items-center space-x-8">
                   <img src={homepic} alt="Logo" className="h-80 w-80 " />
@@ -142,19 +144,19 @@ export default function HeroSection() {
                   </div>
                   <ul className="grid gap-2 py-4">
                     <li className="flex items-center">
-                      <img src="/placeholder.svg" alt="Check" className="mr-2 h-4 w-4" />
+                      <img src={check} alt="Check" className="mr-2 h-4 w-4" />
                       Comprehensive vendor profiles with detailed information.
                     </li>
                     <li className="flex items-center">
-                      <img src="/placeholder.svg" alt="Check" className="mr-2 h-4 w-4" />
+                      <img src={check} alt="Check" className="mr-2 h-4 w-4" />
                       Advanced search and filtering to find the perfect vendor.
                     </li>
                     <li className="flex items-center">
-                      <img src="/placeholder.svg" alt="Check" className="mr-2 h-4 w-4" />
+                      <img src={check} alt="Check" className="mr-2 h-4 w-4" />
                       Seamless communication and collaboration tools.
                     </li>
                     <li className="flex items-center">
-                      <img src="/placeholder.svg" alt="Check" className="mr-2 h-4 w-4" />
+                      <img src={check} alt="Check" className="mr-2 h-4 w-4" />
                       Vendor management and validation features.
                     </li>
                   </ul>
@@ -202,7 +204,7 @@ export default function HeroSection() {
                         advanced search tools have made it so much easier to find the perfect partners for our projects."
                       </p>
                       <div className="flex items-center space-x-4">
-                        <div className="h-10 w-10 rounded-full bg-gray-200" />
+                        <img src={boy} alt="User" className="h-10 w-10 rounded-full" />
                         <div className="space-y-0.5">
                           <p className="text-sm font-medium">Jane Doe</p>
                           <p className="text-sm text-gray-600">Designer, Acme Inc.</p>
@@ -218,7 +220,7 @@ export default function HeroSection() {
                         process."
                       </p>
                       <div className="flex items-center space-x-4">
-                        <div className="h-10 w-10 rounded-full bg-gray-200" />
+                        <img src={boy} alt="User" className="h-10 w-10 rounded-full" />
                         <div className="space-y-0.5">
                           <p className="text-sm font-medium">John Smith</p>
                           <p className="text-sm text-gray-600">Vendor, Widgets Inc.</p>
@@ -234,7 +236,7 @@ export default function HeroSection() {
                         chain."
                       </p>
                       <div className="flex items-center space-x-4">
-                        <div className="h-10 w-10 rounded-full bg-gray-200" />
+                        <img src={girl} alt="User" className="h-10 w-10 rounded-full" />
                         <div className="space-y-0.5">
                           <p className="text-sm font-medium">Sarah Johnson</p>
                           <p className="text-sm text-gray-600">Admin, Acme Corp.</p>
